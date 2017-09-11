@@ -39,7 +39,7 @@ app.get("/scrape", function(req, res) {
  
     var $ = cheerio.load(html);
   
-    $("section.main").each(function(i, element) {
+    $("article h1").each(function(i, element) {
 
       var result = {};
      
